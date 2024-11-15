@@ -12,6 +12,8 @@
 This model was finetuned with roughly 300.000 examples of translations from English to Italian and Italian to English. The model was finetuned in a way to more directly provide a translation without much explanation.
 
 Due to its size, the model runs very well on CPUs. 
+
+
 ![A very italian Llama model](llamaestro-sm-bg.png)
 
 ## Usage 
