@@ -2,6 +2,7 @@ import json
 import os
 from utils import load_translation_data, call_llama_hf
 from tqdm.auto import tqdm
+import pathlib
 
 # Constants
 SYSTEM_PROMPT = """
@@ -26,7 +27,7 @@ The your output should look like this:
 Make sure this format is excatly kept!
 """
 
-FILE_PATH = b"C:\Users\leopu\OneDrive\Programming\Python\llamaestro\data\en-it-cleaned.txt"
+FILE_PATH = pathlib.Path(__file__).parent.parent / 'en-it-cleaned.txt'
 
 def generate_user_message(english_sentence):
     """Generate a user message asking for the translation of an English sentence"""
